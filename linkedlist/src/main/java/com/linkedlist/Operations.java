@@ -108,5 +108,16 @@ public class Operations {
         linkedList.deleteParticularElement(i);
         linkedList.print();
     }
+    /**
+     * methtod to get ordered linked list
+     */
+    public void orderedLinkedList() {
+        LinkedList linkedList = new LinkedList();
+        linkedList.push(70);
+        linkedList.push(30);
+        linkedList.push(40);
+        linkedList.push(56);
+        linkedList.orderedLinkedList();
+    }
 }
 

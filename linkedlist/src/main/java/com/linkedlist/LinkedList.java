@@ -4,6 +4,11 @@
  * Linked list methods
  */
 package com.linkedlist;
+
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class LinkedList {
     Node head;
     Node tail;
@@ -176,6 +181,25 @@ public class LinkedList {
             }
             count=count+1;
             System.out.println("New count is: "+count);
+        }
+    }
+    /**
+     * method to print ordered linked list
+     * called from main.
+     */
+    public void orderedLinkedList() {
+        if (head == null) {
+            System.out.println("No records present");
+        } else {
+            ArrayList a=new ArrayList(4);
+            int i=0;
+            Node temp = head;
+            while (temp != null) {
+                a.add(temp.data);
+                temp = temp.next;
+            }
+            Collections.sort(a);
+            System.out.println(a);
         }
     }
 }
