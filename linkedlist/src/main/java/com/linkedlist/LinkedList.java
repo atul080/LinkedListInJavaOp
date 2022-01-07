@@ -107,4 +107,25 @@ public class LinkedList {
             tail=prev;
         }
     }
+
+    public void findElement(int i) {
+        if (head == null) {
+            System.out.println("No records present");
+        }
+        else if(head.next== null){
+            head=null;
+        }
+        else{
+            Node temp=head;
+            while(temp.next!=null)
+            {
+                if(temp.data==i)
+                {
+                    System.out.println("Element found");
+                    break;
+                }
+                temp=temp.next;
+            }
+        }
+    }
 }

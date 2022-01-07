@@ -61,13 +61,27 @@ public class Operations {
         System.out.println("\nAfter:");
         linkedList.print();
     }
-
+    /**
+     * methtod to delete data from end.
+     * calls removeFromEnd method internally.
+     */
     public void deleteFromEnd() {
         LinkedList linkedList = new LinkedList();
         linkedList.push(70);
         linkedList.push(30);
         linkedList.push(56);
         linkedList.removeFromEnd();
+    }
+    /**
+     * methtod to find element.
+     * calls findElement method internally.
+     */
+    public void findElement(int i) {
+        LinkedList linkedList = new LinkedList();
+        linkedList.push(70);
+        linkedList.push(30);
+        linkedList.push(56);
+        linkedList.findElement(i);
     }
 }
 
