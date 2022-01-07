@@ -15,7 +15,7 @@ public class LinkedListMain {
     public static void main(String[] args) {
         System.out.println("Welcome to Linked List Data structure.");
         Scanner sc = new Scanner(System.in);
-        System.out.println("1. ADD at start\n2. ADD at the end\n3. ADD at the middle.\n4. DELETE from start.\n5.DELETE from end.\n6.Find an element \n7. Insert after particular element");
+        System.out.println("1. ADD at start\n2. ADD at the end\n3. ADD at the middle.\n4. DELETE from start.\n5. DELETE from end.\n6. Find an element \n7. Insert after particular element\n8. DELETE particular element");
 
         switch (sc.nextInt()) {
             case 1:
@@ -38,6 +38,9 @@ public class LinkedListMain {
                 break;
             case 7:
                 new Operations().insertAfterElement(40);
+                break;
+            case 8:
+                new Operations().deleteParticularElement(40);
                 break;
         }
     }

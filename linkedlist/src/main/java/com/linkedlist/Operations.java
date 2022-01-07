@@ -96,5 +96,17 @@ public class Operations {
         linkedList.insertAfterElement(i);
         linkedList.print();
     }
+    /**
+     * methtod to delete particular element.
+     */
+    public void deleteParticularElement(int i) {
+        LinkedList linkedList = new LinkedList();
+        linkedList.push(70);
+        linkedList.push(30);
+        linkedList.push(40);
+        linkedList.push(56);
+        linkedList.deleteParticularElement(i);
+        linkedList.print();
+    }
 }
 

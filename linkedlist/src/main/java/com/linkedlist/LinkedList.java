@@ -49,7 +49,7 @@ public class LinkedList {
      */
     public void print() {
         if (head == null) {
-            System.out.println("Linked List is empty");
+            System.out.println("No records present");
         } else {
             Node temp = head;
             while (temp != null) {
@@ -138,7 +138,7 @@ public class LinkedList {
     public void insertAfterElement(int i) {
         Node newNode=new Node(i);
         if (head == null) {
-            System.out.println("Empty List");
+            System.out.println("No records present");
         } else {
             Node temp = head;
             while (temp.next!=null) {
@@ -151,5 +151,31 @@ public class LinkedList {
             }
         }
 
+    }
+    /**
+     * method to delete particular element from the linked list
+     * called from main.
+     */
+    public void deleteParticularElement(int i) {
+        Node newNode = new Node(i);
+        int count=0;
+        if (head == null) {
+            System.out.println("No records present");
+        } else {
+            Node previous = head;
+            Node temp = head;
+            while (temp != null) {
+                count++;
+                if (temp.data == i) {
+                    newNode.next = temp.next;
+                    previous.next = temp.next;
+                    break;
+                }
+                previous = temp;
+                temp = temp.next;
+            }
+            count=count+1;
+            System.out.println("New count is: "+count);
+        }
     }
 }
