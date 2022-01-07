@@ -71,6 +71,7 @@ public class Operations {
         linkedList.push(30);
         linkedList.push(56);
         linkedList.removeFromEnd();
+        linkedList.print();
     }
     /**
      * methtod to find element.
@@ -82,6 +83,18 @@ public class Operations {
         linkedList.push(30);
         linkedList.push(56);
         linkedList.findElement(i);
+        linkedList.print();
+    }
+    /**
+     * methtod to insert element after 30.
+     */
+    public void insertAfterElement(int i) {
+        LinkedList linkedList = new LinkedList();
+        linkedList.push(70);
+        linkedList.push(30);
+        linkedList.push(56);
+        linkedList.insertAfterElement(i);
+        linkedList.print();
     }
 }
 

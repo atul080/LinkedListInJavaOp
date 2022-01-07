@@ -107,7 +107,10 @@ public class LinkedList {
             tail=prev;
         }
     }
-
+    /**
+     * method to find element in the linked list
+     * called from main.
+     */
     public void findElement(int i) {
         if (head == null) {
             System.out.println("No records present");
@@ -127,5 +130,26 @@ public class LinkedList {
                 temp=temp.next;
             }
         }
+    }
+    /**
+     * method toinsert element after partiicular element in the linked list
+     * called from main.
+     */
+    public void insertAfterElement(int i) {
+        Node newNode=new Node(i);
+        if (head == null) {
+            System.out.println("Empty List");
+        } else {
+            Node temp = head;
+            while (temp.next!=null) {
+                if( temp.data ==30){
+                    newNode.next=temp.next;
+                    temp.next=newNode;
+                    break;
+                }
+                temp = temp.next;
+            }
+        }
+
     }
 }
