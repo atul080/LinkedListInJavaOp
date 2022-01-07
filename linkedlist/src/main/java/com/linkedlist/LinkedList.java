@@ -84,4 +84,27 @@ public class LinkedList {
             head=head.next;
         }
     }
+    /**
+     * method to remove node from the end of the linked list
+     * called from main.
+     */
+    public void removeFromEnd() {
+        if (head == null) {
+            System.out.println("No records present");
+        }
+        else if(head.next== null){
+            head=null;
+        }
+        else{
+            Node prev=head;
+            Node temp=head;
+            while(temp.next!=null)
+            {
+                prev=temp;
+                temp=temp.next;
+            }
+            prev.next=null;
+            tail=prev;
+        }
+    }
 }

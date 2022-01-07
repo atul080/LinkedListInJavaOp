@@ -61,5 +61,13 @@ public class Operations {
         System.out.println("\nAfter:");
         linkedList.print();
     }
+
+    public void deleteFromEnd() {
+        LinkedList linkedList = new LinkedList();
+        linkedList.push(70);
+        linkedList.push(30);
+        linkedList.push(56);
+        linkedList.removeFromEnd();
+    }
 }
 
