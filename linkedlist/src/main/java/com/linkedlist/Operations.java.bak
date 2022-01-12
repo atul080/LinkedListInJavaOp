@@ -53,6 +53,7 @@ public class Operations {
         linkedList.push(30);
         linkedList.push(56);
         linkedList.remove();
+        System.out.println("\nAfter:");
         linkedList.print();
     }
     /**
